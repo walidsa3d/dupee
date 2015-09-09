@@ -27,6 +27,7 @@ class dupee(object):
 	def isimage(self,f):
 		"""check if given file is image using its extension"""
 		imgregex=re.compile(r'\.(jpe?g|png|gif|bmp)$')
+		#return bool(imgregex.search(f))
 		if imgregex.search(f):
 			return True
 		return False
