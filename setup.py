@@ -1,6 +1,13 @@
-from setuptools import setup
 from setuptools import find_packages
+from setuptools import setup
 
+try:
+    from pypandoc import convert
+    read_md = lambda f: convert(f, 'rst')
+except ImportError:
+    print """warning: pypandoc module not found,
+        could not convert Markdown to RST"""
+    read_md = lambda f: open(f, 'r').read()
 
 setup(
     name='dupee',
@@ -18,7 +25,7 @@ setup(
     include_package_data=True,
     package_data={'dupee': ['LICENSE', 'README.md']},
     packages=find_packages(exclude=['test', 'tests']),
-    long_description='duplicate file finder',
+    long_description=read_md('README.md'),
     entry_points={"console_scripts": ["dupee=dupee.cli:main"]},
 
 )

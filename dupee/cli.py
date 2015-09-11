@@ -1,5 +1,5 @@
-from dupee.dupee import dupee
+from dupee import Dupee
+
 
 def main():
-	dupee().main()
-
+    Dupee().main()
