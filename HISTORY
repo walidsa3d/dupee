@@ -1,0 +1,17 @@
+Changelog
+=========
+
+%%version%% (unreleased)
+------------------------
+
+- Doc: update readme. [walid]
+
+- Chore: project fixes    new file:   LICENSE     new file:
+  MANIFEST.in         deleted:    __init__.py         renamed:
+  dupee/main.py -> dupee/cli.py       modified:   setup.py. [walid]
+
+- Many fixes. [walid]
+
+- Handle images. [walid]
+
+

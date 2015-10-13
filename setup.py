@@ -11,13 +11,13 @@ except ImportError:
 
 setup(
     name='dupee',
-    version='0.1',
+    version='0.2.0',
     description='duplicate file finder',
     author='Walid Saad',
     author_email='walid.sa3d@gmail.com',
     url='github.com/walidsa3d/dupee',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Environment :: Console :: Curses',
         'Intended Audience :: End Users/Desktop',
         'Topic :: Utilities'
